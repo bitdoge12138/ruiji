@@ -20,11 +20,20 @@ public class SpringDataRedisTest {
     @Test
     public void testString() {
         // 默认的Key序列化器为JdkSerializationRedisSerializer
-        redisTemplate.opsForValue().set("city", "beijing");
+//        redisTemplate.opsForValue().set("city", "beijing");
+//
+//        String value = (String) redisTemplate.opsForValue().get("city");
 
-        String value = (String) redisTemplate.opsForValue().get("city");
 
-        System.out.println(value);
+
+//        System.out.println(value);
+
+        redisTemplate.opsForValue().set("chen", "nb");
+
+
+
+
+
 
 
 
